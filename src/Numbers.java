@@ -8,7 +8,6 @@ public class Numbers {
         this.NUMBER_ONE = NUMBER_ONE;
         this.NUMBER_TWO = NUMBER_TWO;
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -16,7 +15,6 @@ public class Numbers {
         Numbers numbers = (Numbers) o;
         return NUMBER_TWO == numbers.NUMBER_TWO && NUMBER_TWO == numbers.NUMBER_TWO;
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(NUMBER_ONE, NUMBER_TWO);

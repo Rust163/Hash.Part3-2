@@ -2,9 +2,6 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-
-
-
         Numbers num1 = new Numbers(2, 2);
         Numbers num2 = new Numbers(2, 3);
         Numbers num3 = new Numbers(2, 4);
