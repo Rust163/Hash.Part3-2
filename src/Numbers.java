@@ -1,29 +1,27 @@
 import java.util.*;
 
 public class Numbers {
-    private final int NUMBER_ONE;
-    private final int NUMBER_TWO;
+    private final int numberOne;
+    private final int numberTwo;
 
-    public Numbers(int NUMBER_ONE, int NUMBER_TWO) {
-        this.NUMBER_ONE = NUMBER_ONE;
-        this.NUMBER_TWO = NUMBER_TWO;
+    public Numbers(int numberOne, int numberTwo) {
+        this.numberOne = numberOne;
+        this.numberTwo = numberTwo;
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Numbers numbers = (Numbers) o;
-        return NUMBER_TWO == numbers.NUMBER_TWO && NUMBER_TWO == numbers.NUMBER_TWO;
+        return numberTwo == numbers.numberTwo;
     }
-
     @Override
     public int hashCode() {
-        return Objects.hash(NUMBER_ONE, NUMBER_TWO);
+        return Objects.hash(numberOne, numberTwo);
     }
 
     @Override
     public String toString() {
-        return String.format("%s * %s = ", this.NUMBER_ONE, this.NUMBER_TWO);
+        return String.format("%s * %s = ", this.numberOne, this.numberTwo);
     }
 }
